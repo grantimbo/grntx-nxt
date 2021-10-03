@@ -18,7 +18,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Grant Imbo — Projects</title>
+        <title>{"Grant Imbo — Projects"}</title>
       </Head>
       <Header />
 

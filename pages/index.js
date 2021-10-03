@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Grant Imbo — Front-end Dev // 3D Artist</title>
+        <title>{"Grant Imbo — Front-end Dev // 3D Artist"}</title>
       </Head>
 
       <Header />
@@ -26,12 +26,13 @@ export default function Home() {
           <article>
             <h2>Hi. I'm Grant.</h2>
             <p>
-              Developer by day, artist by night.. Curently working as a
-              full-time Front-End Developer and in spare time, rendering{" "}
+              {
+                "Developer by day, artist by night.. Curently working as a full-time Front-End Developer and in spare time, rendering "
+              }
               <a href="https://youtube.com/grantimbo" target="_blank">
                 3D cars
-              </a>{" "}
-              for fun.
+              </a>
+              {" for fun."}
             </p>
           </article>
         </section>

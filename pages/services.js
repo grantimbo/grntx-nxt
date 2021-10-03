@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <>
       <Head>
-        <title>Grant Imbo — Services</title>
+        <title>{"Grant Imbo — Services"}</title>
       </Head>
 
       <Header />

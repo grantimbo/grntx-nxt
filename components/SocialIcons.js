@@ -6,7 +6,7 @@ export default function SocialIcons() {
           href="https://youtube.com/grantimbo"
           target="_blank"
           alt="Youtube"
-          rel="noopener"
+          rel="noreferrer"
         >
           <i className="icon-youtube"></i>
         </a>
@@ -14,7 +14,7 @@ export default function SocialIcons() {
           href="https://facebook.com/grntx"
           target="_blank"
           alt="Facebook"
-          rel="noopener"
+          rel="noreferrer"
         >
           <i className="icon-facebook"></i>
         </a>
@@ -22,7 +22,7 @@ export default function SocialIcons() {
           href="https://instagram.com/grntx"
           target="_blank"
           alt="Instagram"
-          rel="noopener"
+          rel="noreferrer"
         >
           <i className="icon-instagram"></i>
         </a>
@@ -30,7 +30,7 @@ export default function SocialIcons() {
           href="https://twitter.com/grantimbo"
           target="_blank"
           alt="Twitter"
-          rel="noopener"
+          rel="noreferrer"
         >
           <i className="icon-twitter"></i>
         </a>
@@ -38,7 +38,7 @@ export default function SocialIcons() {
           href="https://github.com/grantimbo"
           target="_blank"
           alt="Github"
-          rel="noopener"
+          rel="noreferrer"
         >
           <i className="icon-github"></i>
         </a>
@@ -46,7 +46,7 @@ export default function SocialIcons() {
           href="https://codepen.io/grantimbo"
           target="_blank"
           alt="Codepen"
-          rel="noopener"
+          rel="noreferrer"
         >
           <i className="icon-codepen"></i>
         </a>
@@ -54,7 +54,7 @@ export default function SocialIcons() {
           href="https://artstation.com/grantimbo"
           target="_blank"
           alt="Artstation"
-          rel="noopener"
+          rel="noreferrer"
         >
           <i className="icon-artstation"></i>
         </a>
@@ -62,7 +62,7 @@ export default function SocialIcons() {
           href="https://behance.net/grantimbo"
           target="_blank"
           alt="Behance"
-          rel="noopener"
+          rel="noreferrer"
         >
           <i className="icon-behance"></i>
         </a>
