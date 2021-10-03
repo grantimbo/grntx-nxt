@@ -1,6 +1,6 @@
-# Personal Website Rebuild
+# Personal Website Rebuild (Next.js)
 
-Personal website rebuild (2021) using Next.js
-Svelte version (2020) is in the "master" branch.
+Personal website rebuild using Next.js (2021)
+Svelte version (2020) - https://github.com/grantimbo/grntx
 
 https://grantimbo.com/
