@@ -1,9 +1,11 @@
 import { useRouter } from "next/router";
 import parse from "html-react-parser";
 import Link from "next/link";
-import { projects } from "../public/_projects";
+import Head from "next/head";
+import { useEffect } from "react";
 
 export default function ModalContents(props) {
+  const projects = props?.post;
   const data = projects.filter((e) => e.slug === props.slug);
   const router = useRouter();
 
@@ -21,9 +23,19 @@ export default function ModalContents(props) {
     );
   };
 
+  useEffect(() => {
+    if (data.length === 0) {
+      router.push(`/not-found`);
+    }
+  }, []);
+
   return (
     <>
-      {data && props.slug && (
+      <Head>
+        <title>Grant Imbo — Projects // {data?.[0]?.title}</title>
+      </Head>
+
+      {data.length > 0 && props.slug && (
         <>
           {projects?.at(0)?.slug != props?.slug && (
             <div

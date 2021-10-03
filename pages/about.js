@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About | Grant Imbo - Front-end Developer & 3D Artist</title>
+        <title>Grant Imbo — About</title>
       </Head>
 
       <Header />

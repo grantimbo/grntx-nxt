@@ -9,7 +9,6 @@ export default function Headers() {
       <Link href="/">
         <a>
           <div className="logo">Grant Imbo</div>
-          {/* <img className="logo" src="/imgs/logo.svg" alt="Grant Imbo" /> */}
         </a>
       </Link>
       <nav className="main">

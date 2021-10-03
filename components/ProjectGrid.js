@@ -23,11 +23,6 @@ export default function ProjectGrid(props) {
                 </div>
                 <div className="details">
                   <h3>{project.title}</h3>
-                  <span>
-                    {project?.tags?.map((tag) => (
-                      <i className={tag} key={tag}></i>
-                    ))}
-                  </span>
                 </div>
               </figure>
             </a>

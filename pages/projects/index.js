@@ -6,54 +6,39 @@ import ProjectGrid from "../../components/ProjectGrid";
 import Modal from "react-modal";
 import ModalContents from "../../components/ModalContents";
 import { useState } from "react";
+import ProjectSort from "../../components/ProjectSort";
 
 Modal.setAppElement("#__next");
 
 export default function Projects() {
   const router = useRouter();
   const [data, setdata] = useState(projects);
+  const [cat, setCat] = useState("all");
 
   return (
     <>
       <Head>
-        <title>Projects | Grant Imbo - Front-end Developer & 3D Artist</title>
+        <title>Grant Imbo — Projects</title>
       </Head>
       <Header />
 
-      <div className="project-head">
-        <div className="tae">
-          <button onClick={() => setdata(projects)}>All</button>
-          <button
-            onClick={() =>
-              setdata(projects.filter((e) => e.tags.includes("icon-motion")))
-            }
-          >
-            Motion
-          </button>
-          <button
-            onClick={() =>
-              setdata(projects.filter((e) => e.tags.includes("abstract")))
-            }
-          >
-            abstract
-          </button>
-        </div>
-      </div>
+      <ProjectSort
+        projects={projects}
+        setdata={setdata}
+        setCat={setCat}
+        cat={cat}
+      />
+
       <ProjectGrid post={data} />
+
       <Modal
         isOpen={!!router.query.slug}
         onRequestClose={() => router.push("/projects")}
         className="modal-container"
         overlayClassName="modal"
       >
-        <ModalContents slug={router.query.slug} />
+        <ModalContents slug={router.query.slug} post={data} />
       </Modal>
-
-      <style jsx>{`
-        .project-head {
-          padding: 1rem 1rem 0.5rem 1rem;
-        }
-      `}</style>
     </>
   );
 }

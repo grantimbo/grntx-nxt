@@ -3,7 +3,7 @@ export const projects = [
     title: "Brians Eclipse",
     slug: "eclipse",
     date: "May 2021",
-    tags: [],
+    tags: ["cars"],
     thumbnail: "/projects/2021/eclipse/eclipse_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/Fg8Qb2b3w1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -16,7 +16,7 @@ export const projects = [
     title: "Subaru 22B",
     slug: "subaru22b",
     date: "May 2021",
-    tags: [],
+    tags: ["cars"],
     thumbnail: "/projects/2021/subaru22b/subaru22b_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/Lqj8hbw6ojI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -29,7 +29,7 @@ export const projects = [
     title: "Lancer EVO 3",
     slug: "evo3",
     date: "May 2021",
-    tags: [],
+    tags: ["cars"],
     thumbnail: "/projects/2021/evo3/evo3_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/ez2B4ROZxtI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -42,7 +42,7 @@ export const projects = [
     title: "Civic EG 95",
     slug: "civiceg",
     date: "Feb 2021",
-    tags: [],
+    tags: ["cars"],
     thumbnail: "/projects/2021/civiceg/civiceg_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/5iEDLlv0BLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -54,7 +54,7 @@ export const projects = [
     title: "Mazda RX7",
     slug: "rx7",
     date: "Feb 2020",
-    tags: [],
+    tags: ["cars"],
     thumbnail: "/projects/2020/rx7/rx7_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/YPdkPqAnBmE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -69,7 +69,7 @@ export const projects = [
     title: "Acura NSX",
     slug: "nsx",
     date: "March 2020",
-    tags: ["icon-motion", "icon-images"],
+    tags: ["cars"],
     thumbnail: "/projects/2020/nsx/nsx_thumb.jpg",
     content: `
         <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/xW6Jnk-CMSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -82,7 +82,7 @@ export const projects = [
     title: "Integra Type-R",
     slug: "integra",
     date: "August 2019",
-    tags: ["icon-motion", "icon-images"],
+    tags: ["cars"],
     thumbnail: "/projects/2019/integra/integra_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/YwYMwHP-u24" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -95,7 +95,7 @@ export const projects = [
     title: "Lancer EVO IV",
     slug: "evo4",
     date: "Feb 2019",
-    tags: [],
+    tags: ["cars", "cyberpunk"],
     thumbnail: "/projects/2019/evo4/evo4_thumb.jpg",
     content: `
     <img src="/projects/2019/evo4/evo4_1.png">
@@ -110,7 +110,7 @@ export const projects = [
     title: "Cyberpunk Renders",
     slug: "cyberpunks",
     date: "2019",
-    tags: [],
+    tags: ["cars", "cyberpunk"],
     thumbnail: "/projects/2019/cyberpunks/cyberpunks_thumb.jpg",
     content: `
     <img src="/projects/2019/cyberpunks/cyberpunks_1.jpg">
@@ -126,7 +126,7 @@ export const projects = [
     title: "Photo Manipulation",
     slug: "photomanipulation",
     date: "July 2019",
-    tags: ["icon-motion", "icon-images"],
+    tags: ["motion", "photomanipulation"],
     thumbnail: "/projects/2019/photomanipulation/photomanipulation_thumb.jpg",
     content: `
       <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/9AwXxvUaCaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -143,7 +143,7 @@ export const projects = [
     title: "GEARS",
     slug: "gears",
     date: "Dec 2019",
-    tags: ["icon-motion", "icon-images"],
+    tags: ["motion"],
     thumbnail: "/projects/2019/gears/gears-thumb.jpg",
     content: `
         <h1>Title Opener Motion Design</h1>
@@ -176,7 +176,7 @@ export const projects = [
     title: "Motion Graphics Compilation",
     slug: "eglaf",
     date: "2012-2019",
-    tags: ["icon-motion"],
+    tags: ["motion"],
     thumbnail: "/projects/2019/motioncompilation/motioncompilation_thumb.jpg",
     content: `
     <h3>Eglaf</h3>
@@ -195,7 +195,7 @@ export const projects = [
     title: "Chada Valencia",
     slug: "chada-valencia",
     date: "July 2017",
-    tags: ["icon-images"],
+    tags: ["visualization", "typography"],
     thumbnail: "/projects/2019/chadavalencia/chadavalencia_thumb.jpg",
     content: `
         <img src="/projects/2019/chadavalencia/grantimbo-chada-valencia-16.jpg" width="1280" height="1280">
@@ -222,7 +222,7 @@ export const projects = [
     title: "Avidlife",
     slug: "avidlife",
     date: "Feb 2020",
-    tags: ["icon-motion"],
+    tags: ["motion", "visualization"],
     thumbnail: "/projects/2020/avidlife/avidlife_thumb.jpg",
     content: `
       <div class="iframe-wrap"><iframe src="https://player.vimeo.com/video/617948985?h=01965fb9d6" width="1196" height="673" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
@@ -244,7 +244,7 @@ export const projects = [
     title: "Zain Booth Concept",
     slug: "zain",
     date: "Feb 2020",
-    tags: ["icon-images"],
+    tags: ["visualization"],
     thumbnail: "/projects/2020/zain/zain_thumb.jpg",
     content: `
       <img src="/projects/2020/zain/zain_1.jpg">
@@ -272,20 +272,19 @@ export const projects = [
     title: "ZMC Booth Animation Demo",
     slug: "zmc",
     date: "Feb 2020",
-    tags: ["icon-images"],
+    tags: ["motion", "visualization"],
     thumbnail: "/projects/2020/zmc/zmc_thumb.jpg",
     content: `
       <div class="iframe-wrap"><iframe src="https://player.vimeo.com/video/619153164?h=9214c4b54a" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-    <img src="/projects/2020/zmc/zmc_1.jpg">
-      <img src="/projects/2020/zmc/zmc_2.jpg">
-      <img src="/projects/2020/zmc/zmc_3.jpg">
+      <img src="/projects/2020/zmc/zmc_1.png">
+      <img src="/projects/2020/zmc/zmc_2.png">
       `,
   },
   {
     title: "Slanttex",
     slug: "slanntex",
     date: "September 2014",
-    tags: ["icon-code"],
+    tags: ["website"],
     thumbnail: "/projects/2014/slanttex/slanttex_thumb.jpg",
     content: `
         <p>Demo : <a href="https://grantimbo.github.io/slanttex/">https://grantimbo.github.io/slanttex/</a></p>
@@ -300,7 +299,7 @@ export const projects = [
     title: "Keep Calm",
     slug: "keep-calm",
     date: "October 2013",
-    tags: ["icon-images"],
+    tags: ["typography"],
     thumbnail: "/projects/2013/keepcalm/keepcalm-thumb.jpg",
     content: `
         <img src="/projects/2013/keepcalm/keepcalm-1.jpg" width="1920" height="1200">
@@ -312,7 +311,7 @@ export const projects = [
     title: "Neon Life",
     slug: "neon-life",
     date: "April 2014",
-    tags: ["icon-images"],
+    tags: ["typography"],
     thumbnail: "/projects/2014/neonlife/neonlife_thumb.jpg",
     content: `
         <img src="/projects/2014/neonlife/neonlife-1.jpg" width="1466" height="877">
@@ -324,7 +323,7 @@ export const projects = [
     title: "Discipline",
     slug: "discipline",
     date: "July 2013",
-    tags: ["icon-images"],
+    tags: ["typography"],
     thumbnail: "/projects/2013/discipline/discipline_thumb.jpg",
     content: `
     <img src="/projects/2013/discipline/discipline_1.jpg">
@@ -337,7 +336,7 @@ export const projects = [
     title: "Product Renders",
     slug: "productrenders",
     date: "March 2016",
-    tags: ["icon-images"],
+    tags: ["visualization"],
     thumbnail: "/projects/2017/productrenders/productrenders_thumb.jpg",
     content: `
         <img src="/projects/2017/productrenders/productrenders_1.jpg">
@@ -360,7 +359,7 @@ export const projects = [
     title: "Abstract Renders 1",
     slug: "abstract",
     date: "March 2016",
-    tags: ["icon-images"],
+    tags: ["abstract"],
     thumbnail: "/projects/2016/abstract/abstract_thumb.jpg",
     content: `
         <img src="/projects/2016/abstract/abstract_1.jpg">
@@ -378,7 +377,7 @@ export const projects = [
     title: "2013-2016 Type Compilation",
     slug: "typecompilation_two",
     date: "2014-2016",
-    tags: ["icon-images"],
+    tags: ["typography"],
     thumbnail:
       "/projects/2016/typecompilation_two/typecompilation_two_thumb.jpg",
     content: `
@@ -398,7 +397,7 @@ export const projects = [
     title: "2011-2012 Type Compilation",
     slug: "type-compilation",
     date: "2011-2012",
-    tags: ["icon-images"],
+    tags: ["typography"],
     thumbnail: "/projects/2012/typecompilation/type-compilation-thumb.jpg",
     content: `
         <img src="/projects/2012/typecompilation/typecomp-1.jpg">

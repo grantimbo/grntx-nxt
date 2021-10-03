@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <>
       <Head>
-        <title>Services | Grant Imbo - Front-end Developer & 3D Artist</title>
+        <title>Grant Imbo — Services</title>
       </Head>
 
       <Header />

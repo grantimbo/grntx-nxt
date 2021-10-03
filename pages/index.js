@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Grant Imbo | Front-end Developer & 3D Artist</title>
+        <title>Grant Imbo — Front-end Dev // 3D Artist</title>
       </Head>
 
       <Header />

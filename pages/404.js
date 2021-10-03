@@ -1,13 +1,15 @@
 import Link from "next/link";
+import Header from "../components/Header";
 
 export default function NotFound() {
   return (
     <>
+      <Header />
       <section>
         <div>
-          <h1>404 Not Found</h1>
+          <h1>Grant Imbo — Not Found</h1>
           <p>
-            Seems like you're lost. Please Go back
+            Seems like you're lost. Please Go back{" "}
             <Link href="/">
               <a>Home</a>
             </Link>

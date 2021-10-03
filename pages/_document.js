@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="Developer by day, artist by night.. Curently working as a
+            content="Developer by day, artist by night. Curently working as a
               full-time Front-End Developer and in spare time, rendering 3D cars."
           />
           <link rel="icon" href="/imgs/favicon.png" />
