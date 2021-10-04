@@ -29,6 +29,12 @@ const ProjectSort = (props) => {
         }
         .project-sort {
           display: inline-block;
+          text-align: center;
+        }
+        @media (min-width: 620px) {
+          .project-sort {
+            text-align: left;
+          }
         }
       `}</style>
     </>

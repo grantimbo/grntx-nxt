@@ -21,7 +21,14 @@ const SortButton = (btn) => {
 
       <style jsx>{`
         button {
-          margin: 0 0.5rem 0.5rem 0;
+          margin: 0 0.4rem 0.4rem 0;
+          font-size: 0.7rem;
+        }
+        @media (min-width: 620px) {
+          button {
+            margin: 0 0.5rem 0.5rem 0;
+            font-size: 0.8rem;
+          }
         }
       `}</style>
     </>
