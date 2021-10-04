@@ -356,6 +356,18 @@ export const projects = [
   },
 
   {
+    title: "Abstract Renders 2",
+    slug: "abstractrenders2",
+    date: "May 2019",
+    tags: ["abstract"],
+    thumbnail: "/projects/2019/abstractrenders2/abstractrenders2_thumb.jpg",
+    content: `
+        <img src="/projects/2019/abstractrenders2/abstractrenders2_1.jpg">
+        <img src="/projects/2019/abstractrenders2/abstractrenders2_2.jpg">
+        `,
+  },
+
+  {
     title: "Abstract Renders 1",
     slug: "abstract",
     date: "March 2016",
