@@ -6,28 +6,26 @@ export default function ProjectGrid(props) {
   return (
     <section className="projects-list">
       {projects?.map((project) => (
-        <div key={project.title}>
+        <article key={project.title} title={project.title}>
           <Link
             href={`/projects/?slug=${project.slug}`}
             as={`/projects/${project.slug}`}
           >
             <a>
               <figure>
-                <div className="thumbnail">
-                  <img
-                    src={project.thumbnail}
-                    alt={project.title}
-                    width={300}
-                    height={188}
-                  />
-                </div>
+                <img
+                  src={project.thumbnail}
+                  alt={project.title}
+                  width={300}
+                  height={300}
+                />
                 <div className="details">
-                  <h3>{project.title}</h3>
+                  <p>{project.title}</p>
                 </div>
               </figure>
             </a>
           </Link>
-        </div>
+        </article>
       ))}
     </section>
   );
