@@ -1,10 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
 const Header = () => {
   const router = useRouter();
+  const [path, setPath] = useState("");
+
   useEffect(() => {
+    setPath(router.pathname);
+
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
     var s1 = document.createElement("script"),
@@ -16,7 +20,7 @@ const Header = () => {
     s0.parentNode.insertBefore(s1, s0);
   }, []);
 
-  https: return (
+  return (
     <header>
       <Link href="/">
         <a>
@@ -25,25 +29,25 @@ const Header = () => {
       </Link>
       <nav className="main">
         <Link href="/">
-          <a className={router.pathname == "/" ? "active" : ""}>
+          <a className={path == "/" ? "active" : ""}>
             <i className="icon-home"></i>
             <span>Home</span>
           </a>
         </Link>
         <Link href="/projects">
-          <a className={router.pathname == "/projects" ? "active" : ""}>
+          <a className={path == "/projects" ? "active" : ""}>
             <i className="icon-images"></i>
             <span>Projects</span>
           </a>
         </Link>
         <Link href="/services">
-          <a className={router.pathname == "/services" ? "active" : ""}>
+          <a className={path == "/services" ? "active" : ""}>
             <i className="icon-cog"></i>
             <span>Services</span>
           </a>
         </Link>
         <Link href="/about">
-          <a className={router.pathname == "/about" ? "active" : ""}>
+          <a className={path == "/about" ? "active" : ""}>
             <i className="icon-user"></i>
             <span>About</span>
           </a>
