@@ -62,12 +62,6 @@ export default function ModalContents(props) {
               </a>
             </Link>
 
-            <Link href="/projects">
-              <a className="back">
-                <i className="icon-back-arrow" /> <p>Projects</p>
-              </a>
-            </Link>
-
             <div className="modal-content" id="scrollHere">
               <div className="header">
                 <h3 className="title">{data?.[0]?.title}</h3>

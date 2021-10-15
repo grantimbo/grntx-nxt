@@ -4,6 +4,7 @@
   --blue2: #0050a0;
   --darkblue: #11172e;
   --border: 1px solid #1d294a;
+  --corner: 0.5rem;
 }
 html {
   box-sizing: border-box;
@@ -229,7 +230,6 @@ nav.project-cat {
     flex: 0 0 auto;
     width: 50%;
     position: relative;
-
     background-size: cover;
 
     &:before {
@@ -248,7 +248,7 @@ nav.project-cat {
       padding: 0.4rem;
 
       figure {
-        border-radius: 0.5rem;
+        border-radius: var(--corner);
         overflow: hidden;
         position: relative;
         background: #11172e;
@@ -424,9 +424,9 @@ nav.project-cat {
   font-size: 2.5rem;
   z-index: 1;
   background: #1d294a96;
-  border-radius: 2px;
   color: #ffffff;
   height: 47px;
+  border-radius: var(--corner);
 }
 .modalnav span {
   padding-bottom: 3px;
@@ -445,29 +445,24 @@ nav.project-cat {
   min-height: 60vh;
   outline: none;
 }
-.close-modal {
-  display: none;
-}
-.back {
-  background: #11172e;
-  border-bottom: 1px solid #1d294a;
-  padding: 1rem;
-  font-size: 1.2rem;
+a.close-modal {
+  position: absolute;
+  cursor: pointer;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: #1d294a;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   align-items: center;
-
-  &:hover {
-    text-decoration: none;
-  }
+  border-radius: var(--corner);
+  justify-content: center;
 }
-.back i {
-  margin-right: 10px;
-  cursor: pointer;
-  color: #fff;
-}
-.back p {
-  color: #fff;
-  margin: 0;
+a.close-modal:hover {
+  color: #4072cc;
+  text-decoration: none;
 }
 .modal-content {
   padding: 1rem;
@@ -482,28 +477,6 @@ p.date {
 }
 
 @media (min-width: 768px) {
-  .close-modal {
-    position: absolute;
-    cursor: pointer;
-    top: 1.3rem;
-    right: 1.2rem;
-    font-size: 2rem;
-    background: #1d294a;
-    color: #4072cc;
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    border-radius: 2px;
-    justify-content: center;
-  }
-  .close-modal:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  .back {
-    display: none;
-  }
   .modal {
     background: #141827bf;
   }
@@ -512,6 +485,7 @@ p.date {
     max-width: 720px;
     background: #090e20;
     border: var(--border);
+    border-radius: var(--corner);
     margin: 3rem auto;
   }
 }
@@ -540,9 +514,13 @@ p.date {
   }
   .modalnav span {
     background: #1d294a;
-    color: #4072cc;
-    border-radius: 2px;
+    color: #fff;
+    border-radius: var(--corner);
     padding: 0 20px 4px;
+
+    &:hover {
+      color: #4072cc;
+    }
   }
   .showPrev {
     background: linear-gradient(90deg, #00061b, #ffffff00);
