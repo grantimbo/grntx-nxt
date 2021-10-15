@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import ReactGA from "react-ga";
 
 const Header = () => {
   const router = useRouter();
   const [path, setPath] = useState("");
+
+  ReactGA.initialize("UA-47603859-1");
 
   useEffect(() => {
     setPath(router.pathname);
@@ -19,6 +22,10 @@ const Header = () => {
     s1.setAttribute("crossorigin", "*");
     s0.parentNode.insertBefore(s1, s0);
   }, []);
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [router.pathname]);
 
   return (
     <header>

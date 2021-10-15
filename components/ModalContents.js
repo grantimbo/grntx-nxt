@@ -3,6 +3,7 @@ import parse from "html-react-parser";
 import Link from "next/link";
 import Head from "next/head";
 import { useEffect } from "react";
+import ReactGA from "react-ga";
 
 export default function ModalContents(props) {
   const projects = props?.post;
@@ -28,6 +29,10 @@ export default function ModalContents(props) {
       router.push(`/not-found`);
     }
   }, []);
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [props?.slug]);
 
   return (
     <>
