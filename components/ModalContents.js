@@ -7,20 +7,20 @@ import ReactGA from "react-ga";
 
 export default function ModalContents(props) {
   const projects = props?.post;
-  const data = projects.filter((e) => e.slug === props.slug);
+  const data = projects?.filter((e) => e.slug === props.slug);
   const router = useRouter();
 
   const navigate = (slug, direction) => {
     document.querySelector(".modal").scrollTop = 0;
     let index = null;
-    projects.forEach((e, i) => {
+    projects?.forEach((e, i) => {
       if (e.slug === slug) {
         direction == "next" ? (index = i + 1) : (index = i - 1);
       }
     });
     router.push(
-      `/projects/?slug=${projects[index].slug}`,
-      `/projects/${projects[index].slug}`
+      `/projects/?slug=${projects[index]?.slug}`,
+      `/projects/${projects[index]?.slug}`
     );
   };
 
@@ -42,7 +42,7 @@ export default function ModalContents(props) {
 
       {data.length > 0 && props.slug && (
         <>
-          {projects?.at(0)?.slug != props?.slug && (
+          {projects?.[0]?.slug != props?.slug && (
             <div
               className="modalnav showPrev"
               onClick={() => navigate(data?.[0]?.slug, "previous")}
@@ -51,7 +51,7 @@ export default function ModalContents(props) {
             </div>
           )}
 
-          {projects?.at(-1)?.slug != props?.slug && (
+          {projects?.[projects?.length - 1]?.slug != props?.slug && (
             <div
               className="modalnav showNext"
               onClick={() => navigate(data?.[0]?.slug, "next")}
