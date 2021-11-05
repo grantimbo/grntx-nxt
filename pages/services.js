@@ -1,7 +1,13 @@
 import Header from "../components/Header";
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 export default function Services() {
+  const fadeIninitial = { opacity: 0, scale: 0.95 };
+  const fadeInanimate = { opacity: 1, scale: 1 };
+  const dropIninitial = { opacity: 0, y: -20 };
+  const dropInanimate = { opacity: 1, y: 0 };
+
   return (
     <>
       <Head>
@@ -11,7 +17,12 @@ export default function Services() {
       <Header />
 
       <section className="head">
-        <img
+        <motion.img
+          animate={fadeInanimate}
+          initial={fadeIninitial}
+          transition={{
+            duration: 0.4,
+          }}
           srcSet="/imgs/services-head-sm.png 560w,
 				/imgs/services-head-lg.png 1066w"
           sizes="(max-width: 768px) 560px, 1066px"
@@ -23,7 +34,15 @@ export default function Services() {
       </section>
       <section className="service">
         <article>
-          <div className="flex img">
+          <motion.div
+            className="flex img"
+            animate={fadeInanimate}
+            initial={fadeIninitial}
+            transition={{
+              duration: 0.4,
+              delay: 0.3,
+            }}
+          >
             <img
               srcSet="/imgs/services/graphic-design-sm.png 150w,
 						/imgs/services/graphic-design-lg.png 323w"
@@ -33,14 +52,28 @@ export default function Services() {
               height={323}
               alt="Graphic Design"
             />
-          </div>
+          </motion.div>
           <div className="flex">
             <div>
-              <h3>Graphic Design</h3>
-              <p>
+              <motion.h3
+                animate={dropInanimate}
+                initial={dropIninitial}
+                transition={{
+                  delay: 0.3,
+                }}
+              >
+                Graphic Design
+              </motion.h3>
+              <motion.p
+                animate={dropInanimate}
+                initial={dropIninitial}
+                transition={{
+                  delay: 0.4,
+                }}
+              >
                 Product labels, posters, banners, logos, brochures, ebooks or
                 any visual expressions.
-              </p>
+              </motion.p>
             </div>
           </div>
         </article>
@@ -48,14 +81,36 @@ export default function Services() {
         <article>
           <div className="flex">
             <div>
-              <h3>Website & Apps</h3>
-              <p>
+              <motion.h3
+                animate={dropInanimate}
+                initial={dropIninitial}
+                transition={{
+                  delay: 0.6,
+                }}
+              >
+                Website & Apps
+              </motion.h3>
+              <motion.p
+                animate={dropInanimate}
+                initial={dropIninitial}
+                transition={{
+                  delay: 0.7,
+                }}
+              >
                 API driven websites and apps using the latest technologies and
                 frameworks.
-              </p>
+              </motion.p>
             </div>
           </div>
-          <div className="flex img">
+          <motion.div
+            className="flex img"
+            animate={fadeInanimate}
+            initial={fadeIninitial}
+            transition={{
+              duration: 0.5,
+              delay: 0.4,
+            }}
+          >
             <img
               srcSet="/imgs/services/website-apps-sm.png 150w,
 						/imgs/services/website-apps-lg.png 323w"
@@ -65,11 +120,19 @@ export default function Services() {
               height={323}
               alt="Websites and Apps"
             />
-          </div>
+          </motion.div>
         </article>
 
         <article>
-          <div className="flex img">
+          <motion.div
+            className="flex img"
+            animate={fadeInanimate}
+            initial={fadeIninitial}
+            transition={{
+              duration: 0.5,
+              delay: 0.3,
+            }}
+          >
             <img
               srcSet="/imgs/services/product-renders-sm.png 150w,
 						/imgs/services/product-renders-lg.png 323w"
@@ -79,7 +142,7 @@ export default function Services() {
               height={323}
               alt="Product Renders"
             />
-          </div>
+          </motion.div>
           <div className="flex">
             <div>
               <h3>Product Renders</h3>
@@ -137,44 +200,6 @@ export default function Services() {
           </div>
         </article>
       </section>
-
-      <style jsx>{`
-        section.head {
-          text-align: center;
-        }
-        section.service {
-          padding: 0;
-          padding: 1rem;
-          margin: 0 auto;
-        }
-        article {
-          display: grid;
-          grid-template-columns: 1fr 1.5fr;
-          grid-gap: 1rem;
-          margin-bottom: 4rem;
-        }
-        article:nth-child(even) {
-          grid-template-columns: 1.5fr 1fr;
-          text-align: right;
-        }
-        article .flex {
-          display: flex;
-          align-items: center;
-        }
-        article .flex.img {
-          justify-content: center;
-        }
-        article h3 {
-          color: var(--eggblue);
-        }
-
-        @media (min-width: 768px) {
-          section.service {
-            max-width: 900px;
-            margin: 0 auto;
-          }
-        }
-      `}</style>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -11,7 +12,13 @@ export default function Home() {
       <Header />
 
       <section className="contents">
-        <figure>
+        <motion.figure
+          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          transition={{
+            duration: 0.4,
+          }}
+        >
           <img
             srcSet="/imgs/home-bg-sm.png 640w,
                     /imgs/home-bg-lg.png 1104w"
@@ -21,11 +28,19 @@ export default function Home() {
             height={930}
             alt="Creator Thinker"
           />
-        </figure>
+        </motion.figure>
         <section>
           <article>
-            <h2>{`Hi. I'm Grant.`}</h2>
-            <p>
+            <motion.h2
+              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: -20 }}
+              transition={{ delay: 0.2 }}
+            >{`Hi. I'm Grant.`}</motion.h2>
+            <motion.p
+              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: -20 }}
+              transition={{ delay: 0.3 }}
+            >
               {
                 "Developer by day, artist by night.. Curently working as a full-time Front-End Developer and in spare time, rendering "
               }
@@ -37,7 +52,7 @@ export default function Home() {
                 3D cars
               </a>
               {" for fun."}
-            </p>
+            </motion.p>
           </article>
         </section>
       </section>

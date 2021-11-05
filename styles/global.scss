@@ -220,6 +220,65 @@ nav.project-cat {
   }
 }
 
+// Sevices Page
+section.head {
+  text-align: center;
+}
+section.service {
+  padding: 0;
+  padding: 1rem;
+  margin: 0 auto;
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 1rem;
+    margin-bottom: 4rem;
+
+    &:nth-child(even) {
+      grid-template-columns: 1.5fr 1fr;
+      text-align: right;
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+    }
+    .flex.img {
+      justify-content: center;
+    }
+    h3 {
+      color: var(--eggblue);
+    }
+  }
+}
+@media (min-width: 768px) {
+  section.service {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+// About Page
+section.about {
+  max-width: 620px;
+  margin: 0 auto;
+
+  article {
+    padding: 1rem;
+    h2 {
+      margin-bottom: 1.5rem;
+      color: var(--eggblue);
+    }
+    ul {
+      padding-left: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+    span {
+      color: var(--eggblue);
+    }
+  }
+}
+
 /* project list */
 .projects-list {
   display: flex;
