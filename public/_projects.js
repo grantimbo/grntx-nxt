@@ -7,9 +7,9 @@ export const projects = [
     thumbnail: "/projects/2021/eclipse/eclipse_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/Fg8Qb2b3w1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    <img src="/projects/2021/eclipse/eclipse_1.webp">
-    <img src="/projects/2021/eclipse/eclipse_2.webp">
-    <img src="/projects/2021/eclipse/eclipse_3.webp">
+    <img src="/projects/2021/eclipse/eclipse_1.webp" width="1920" height="1080">
+    <img src="/projects/2021/eclipse/eclipse_2.webp" width="1691" height="951">
+    <img src="/projects/2021/eclipse/eclipse_3.webp" width="1920" height="1080">
     `,
   },
   {
@@ -20,9 +20,9 @@ export const projects = [
     thumbnail: "/projects/2021/subaru22b/subaru22b_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/Lqj8hbw6ojI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    <img src="/projects/2021/subaru22b/subaru22b_1.jpg">
-    <img src="/projects/2021/subaru22b/subaru22b_2.jpg">
-    <img src="/projects/2021/subaru22b/subaru22b_3.jpg">
+    <img src="/projects/2021/subaru22b/subaru22b_1.jpg" width="1914" height="1531">
+    <img src="/projects/2021/subaru22b/subaru22b_2.jpg" width="1600" height="901">
+    <img src="/projects/2021/subaru22b/subaru22b_3.jpg" width="1600" height="900">
     `,
   },
   {
@@ -33,9 +33,9 @@ export const projects = [
     thumbnail: "/projects/2021/evo3/evo3_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/ez2B4ROZxtI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    <img src="/projects/2021/evo3/evo3_1.jpg">
-    <img src="/projects/2021/evo3/evo3_2.jpg">
-    <img src="/projects/2021/evo3/evo3_3.jpg">
+    <img src="/projects/2021/evo3/evo3_1.jpg" width="1280" height="1600">
+    <img src="/projects/2021/evo3/evo3_2.jpg" width="1280" height="1600">
+    <img src="/projects/2021/evo3/evo3_3.jpg" width="1280" height="1600">
     `,
   },
   {
@@ -46,8 +46,8 @@ export const projects = [
     thumbnail: "/projects/2021/civiceg/civiceg_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/5iEDLlv0BLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    <img src="/projects/2021/civiceg/civiceg_1.webp">
-    <img src="/projects/2021/civiceg/civiceg_2.webp">
+    <img src="/projects/2021/civiceg/civiceg_1.webp" width="1280" height="1599">
+    <img src="/projects/2021/civiceg/civiceg_2.webp" width="1280" height="1599">
     `,
   },
   {
@@ -58,11 +58,11 @@ export const projects = [
     thumbnail: "/projects/2020/rx7/rx7_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/YPdkPqAnBmE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    <img src="/projects/2020/rx7/rx7_1.jpg">
-    <img src="/projects/2020/rx7/rx7_2.jpg">
-    <img src="/projects/2020/rx7/rx7_3.jpg">
-    <img src="/projects/2020/rx7/rx7_4.jpg">
-    <img src="/projects/2020/rx7/rx7_5.jpg">
+    <img src="/projects/2020/rx7/rx7_1.jpg" width="1228" height="1534">
+    <img src="/projects/2020/rx7/rx7_2.jpg" width="1600" height="2000">
+    <img src="/projects/2020/rx7/rx7_3.jpg" width="1600" height="2000">
+    <img src="/projects/2020/rx7/rx7_4.jpg" width="1600" height="2000">
+    <img src="/projects/2020/rx7/rx7_5.jpg" width="1206" height="1507">
     `,
   },
   {
@@ -86,8 +86,8 @@ export const projects = [
     thumbnail: "/projects/2019/integra/integra_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/YwYMwHP-u24" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      <img src="/projects/2019/integra/integra_1.jpg">
-      <img src="/projects/2019/integra/integra_2.jpg">
+      <img src="/projects/2019/integra/integra_1.jpg" width="1280" height="1280">
+      <img src="/projects/2019/integra/integra_2.jpg" width="1280" height="1280">
       `,
   },
 
@@ -98,12 +98,12 @@ export const projects = [
     tags: ["cars", "cyberpunk"],
     thumbnail: "/projects/2019/evo4/evo4_thumb.jpg",
     content: `
-    <img src="/projects/2019/evo4/evo4_1.png">
-    <img src="/projects/2019/evo4/evo4_3.jpg">
-    <img src="/projects/2019/evo4/evo4_4.jpg">
-    <img src="/projects/2019/evo4/evo4_5.jpg">
+    <img src="/projects/2019/evo4/evo4_2.jpg" width="1280" height="1280">
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/S7XCEfg7tnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    <img src="/projects/2019/evo4/evo4_2.jpg">
+    <img src="/projects/2019/evo4/evo4_1.png" width="956" height="956">
+    <img src="/projects/2019/evo4/evo4_3.jpg" width="1600" height="1600">
+    <img src="/projects/2019/evo4/evo4_4.jpg" width="1000" height="1000">
+    <img src="/projects/2019/evo4/evo4_5.jpg" width="980" height="981">
     `,
   },
   {
@@ -113,12 +113,12 @@ export const projects = [
     tags: ["cars", "cyberpunk"],
     thumbnail: "/projects/2019/cyberpunks/cyberpunks_thumb.jpg",
     content: `
-    <img src="/projects/2019/cyberpunks/cyberpunks_1.jpg">
-    <img src="/projects/2019/cyberpunks/cyberpunks_2.jpg">
-    <img src="/projects/2019/cyberpunks/cyberpunks_3.jpg">
-    <img src="/projects/2019/cyberpunks/cyberpunks_4.jpg">
-    <img src="/projects/2019/cyberpunks/cyberpunks_5.jpg">
-    <img src="/projects/2019/cyberpunks/cyberpunks_6.jpg">
+    <img src="/projects/2019/cyberpunks/cyberpunks_1.jpg" width="1130" height="1130">
+    <img src="/projects/2019/cyberpunks/cyberpunks_2.jpg" width="1280" height="1280">
+    <img src="/projects/2019/cyberpunks/cyberpunks_3.jpg" width="1600" height="1600">
+    <img src="/projects/2019/cyberpunks/cyberpunks_4.jpg" width="1280" height="1280">
+    <img src="/projects/2019/cyberpunks/cyberpunks_5.jpg" width="1280" height="1280">
+    <img src="/projects/2019/cyberpunks/cyberpunks_6.jpg" width="1280" height="1280">
     `,
   },
 
@@ -132,10 +132,10 @@ export const projects = [
       <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/9AwXxvUaCaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/pVmUFEQlkwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/rVDLTEexbfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      <img src="/projects/2019/photomanipulation/photomanipulation_1.jpg">
-      <img src="/projects/2019/photomanipulation/photomanipulation_2.jpg">
-      <img src="/projects/2019/photomanipulation/photomanipulation_3.jpg">
-      <img src="/projects/2019/photomanipulation/photomanipulation_4.jpg">
+      <img src="/projects/2019/photomanipulation/photomanipulation_1.jpg" width="829" height="1036">
+      <img src="/projects/2019/photomanipulation/photomanipulation_2.jpg" width="1080" height="1350">
+      <img src="/projects/2019/photomanipulation/photomanipulation_3.jpg" width="1080" height="1350">
+      <img src="/projects/2019/photomanipulation/photomanipulation_4.jpg" width="800" height="1000">
       `,
   },
 
@@ -226,18 +226,18 @@ export const projects = [
     thumbnail: "/projects/2020/avidlife/avidlife_thumb.jpg",
     content: `
       <div class="iframe-wrap"><iframe src="https://player.vimeo.com/video/617948985?h=01965fb9d6" width="1196" height="673" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-      <img src="/projects/2020/avidlife/avidlife_1.jpg">
-      <img src="/projects/2020/avidlife/avidlife_2.jpg">
-      <img src="/projects/2020/avidlife/avidlife_3.jpg">
-      <img src="/projects/2020/avidlife/avidlife_4.jpg">
-      <img src="/projects/2020/avidlife/avidlife_5.jpg">
-      <img src="/projects/2020/avidlife/avidlife_6.jpg">
-      <img src="/projects/2020/avidlife/avidlife_7.jpg">
-      <img src="/projects/2020/avidlife/avidlife_8.jpg">
-      <img src="/projects/2020/avidlife/avidlife_9.jpg">
-      <img src="/projects/2020/avidlife/avidlife_10.jpg">
-      <img src="/projects/2020/avidlife/avidlife_11.jpg">
-      <img src="/projects/2020/avidlife/avidlife_12.jpg">
+      <img src="/projects/2020/avidlife/avidlife_1.jpg" width="1280" height="960">
+      <img src="/projects/2020/avidlife/avidlife_2.jpg" width="1280" height="960">
+      <img src="/projects/2020/avidlife/avidlife_3.jpg" width="1280" height="960">
+      <img src="/projects/2020/avidlife/avidlife_4.jpg" width="1280" height="960">
+      <img src="/projects/2020/avidlife/avidlife_5.jpg" width="1280" height="960">
+      <img src="/projects/2020/avidlife/avidlife_6.jpg" width="1280" height="960">
+      <img src="/projects/2020/avidlife/avidlife_7.jpg" width="1280" height="960">
+      <img src="/projects/2020/avidlife/avidlife_8.jpg" width="1280" height="960">
+      <img src="/projects/2020/avidlife/avidlife_9.jpg" width="1280" height="960">
+      <img src="/projects/2020/avidlife/avidlife_10.jpg" width="1280" height="960">
+      <img src="/projects/2020/avidlife/avidlife_11.jpg" width="1280" height="960">
+      <img src="/projects/2020/avidlife/avidlife_12.jpg" width="1280" height="960">
     `,
   },
   {
@@ -247,25 +247,25 @@ export const projects = [
     tags: ["visualization"],
     thumbnail: "/projects/2020/zain/zain_thumb.jpg",
     content: `
-      <img src="/projects/2020/zain/zain_1.jpg">
-      <img src="/projects/2020/zain/zain_2.jpg">
-      <img src="/projects/2020/zain/zain_3.jpg">
-      <img src="/projects/2020/zain/zain_4.jpg">
-      <img src="/projects/2020/zain/zain_5.jpg">
-      <img src="/projects/2020/zain/zain_6.jpg">
-      <img src="/projects/2020/zain/zain_7.jpg">
-      <img src="/projects/2020/zain/zain_8.jpg">
-      <img src="/projects/2020/zain/zain_9.jpg">
-      <img src="/projects/2020/zain/zain_10.jpg">
-      <img src="/projects/2020/zain/zain_11.jpg">
-      <img src="/projects/2020/zain/zain_12.jpg">
-      <img src="/projects/2020/zain/zain_13.jpg">
-      <img src="/projects/2020/zain/zain_14.jpg">
-      <img src="/projects/2020/zain/zain_15.jpg">
-      <img src="/projects/2020/zain/zain_16.jpg">
-      <img src="/projects/2020/zain/zain_17.jpg">
-      <img src="/projects/2020/zain/zain_18.jpg">
-      <img src="/projects/2020/zain/zain_19.jpg">
+      <img src="/projects/2020/zain/zain_1.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_2.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_3.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_4.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_5.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_6.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_7.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_8.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_9.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_10.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_11.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_12.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_13.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_14.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_15.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_16.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_17.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_18.jpg" width="1920" height="1080">
+      <img src="/projects/2020/zain/zain_19.jpg" width="1920" height="1080">
     `,
   },
   {
@@ -276,8 +276,8 @@ export const projects = [
     thumbnail: "/projects/2020/zmc/zmc_thumb.jpg",
     content: `
       <div class="iframe-wrap"><iframe src="https://player.vimeo.com/video/619153164?h=9214c4b54a" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-      <img src="/projects/2020/zmc/zmc_1.png">
-      <img src="/projects/2020/zmc/zmc_2.png">
+      <img src="/projects/2020/zmc/zmc_1.png" width="1920" height="1080">
+      <img src="/projects/2020/zmc/zmc_2.png" width="1920" height="1080">
       `,
   },
   {
@@ -326,10 +326,10 @@ export const projects = [
     tags: ["typography"],
     thumbnail: "/projects/2013/discipline/discipline_thumb.jpg",
     content: `
-    <img src="/projects/2013/discipline/discipline_1.jpg">
-    <img src="/projects/2013/discipline/discipline_2.jpg">
-    <img src="/projects/2013/discipline/discipline_3.jpg">
-    <img src="/projects/2013/discipline/discipline_4.jpg">
+    <img src="/projects/2013/discipline/discipline_1.jpg" width="999" height="325">
+    <img src="/projects/2013/discipline/discipline_2.jpg" width="1000" height="562">
+    <img src="/projects/2013/discipline/discipline_3.jpg" width="1000" height="562">
+    <img src="/projects/2013/discipline/discipline_4.jpg" width="755" height="440">
     `,
   },
   {
@@ -339,19 +339,20 @@ export const projects = [
     tags: ["visualization"],
     thumbnail: "/projects/2017/productrenders/productrenders_thumb.jpg",
     content: `
-        <img src="/projects/2017/productrenders/productrenders_1.jpg">
-        <img src="/projects/2017/productrenders/productrenders_2.jpg">
-        <img src="/projects/2017/productrenders/productrenders_3.jpg">
-        <img src="/projects/2017/productrenders/productrenders_4.png">
-        <img src="/projects/2017/productrenders/productrenders_5.jpg">
-        <img src="/projects/2017/productrenders/productrenders_6.jpg">
-        <img src="/projects/2017/productrenders/productrenders_7.jpg">
-        <img src="/projects/2017/productrenders/productrenders_8.jpg">
-        <img src="/projects/2017/productrenders/productrenders_9.jpg">
-        <img src="/projects/2017/productrenders/productrenders_10.jpg">
-        <img src="/projects/2017/productrenders/productrenders_11.jpg">
-        <img src="/projects/2017/productrenders/productrenders_12.jpg">
-        <img src="/projects/2017/productrenders/productrenders_13.jpg">
+        <img src="/projects/2017/productrenders/productrenders_1.jpg" width="2500" height="2500">
+        <img src="/projects/2017/productrenders/productrenders_2.jpg" width="689" height="540">
+        <img src="/projects/2017/productrenders/productrenders_3.jpg" width="2000" height="2000">
+        <img src="/projects/2017/productrenders/productrenders_4.png" width="731" height="728">
+        <img src="/projects/2017/productrenders/productrenders_5.jpg" width="2500" height="2500">
+        <img src="/projects/2017/productrenders/productrenders_5.png" width="735" height="662">
+        <img src="/projects/2017/productrenders/productrenders_6.jpg" width="2500" height="2500">
+        <img src="/projects/2017/productrenders/productrenders_7.jpg" width="2000" height="2000">
+        <img src="/projects/2017/productrenders/productrenders_8.jpg" width="1500" height="1500">
+        <img src="/projects/2017/productrenders/productrenders_9.jpg" width="2500" height="2500">
+        <img src="/projects/2017/productrenders/productrenders_10.jpg" width="720" height="725">
+        <img src="/projects/2017/productrenders/productrenders_11.jpg" width="2000" height="2000">
+        <img src="/projects/2017/productrenders/productrenders_12.jpg" width="2500" height="2500">
+        <img src="/projects/2017/productrenders/productrenders_13.jpg" width="2500" height="2500">
         `,
   },
 
@@ -362,8 +363,8 @@ export const projects = [
     tags: ["abstract"],
     thumbnail: "/projects/2019/abstractrenders2/abstractrenders2_thumb.jpg",
     content: `
-        <img src="/projects/2019/abstractrenders2/abstractrenders2_1.jpg">
-        <img src="/projects/2019/abstractrenders2/abstractrenders2_2.jpg">
+        <img src="/projects/2019/abstractrenders2/abstractrenders2_1.jpg" width="900" height="1125">
+        <img src="/projects/2019/abstractrenders2/abstractrenders2_2.jpg" width="900" height="1125">
         `,
   },
 
@@ -374,14 +375,14 @@ export const projects = [
     tags: ["abstract"],
     thumbnail: "/projects/2016/abstract/abstract_thumb.jpg",
     content: `
-        <img src="/projects/2016/abstract/abstract_1.jpg">
-        <img src="/projects/2016/abstract/abstract_2.jpg">
-        <img src="/projects/2016/abstract/abstract_3.jpg">
-        <img src="/projects/2016/abstract/abstract_4.jpg">
-        <img src="/projects/2016/abstract/abstract_5.jpg">
-        <img src="/projects/2016/abstract/abstract_6.jpg">
-        <img src="/projects/2016/abstract/abstract_7.jpg">
-        <img src="/projects/2016/abstract/abstract_8.jpg">
+        <img src="/projects/2016/abstract/abstract_1.jpg" width="1000" height="1000">
+        <img src="/projects/2016/abstract/abstract_2.jpg" width="1000" height="1000">
+        <img src="/projects/2016/abstract/abstract_3.jpg" width="1000" height="1000">
+        <img src="/projects/2016/abstract/abstract_4.jpg" width="1000" height="1000">
+        <img src="/projects/2016/abstract/abstract_5.jpg" width="1000" height="1000">
+        <img src="/projects/2016/abstract/abstract_6.jpg" width="1000" height="1000">
+        <img src="/projects/2016/abstract/abstract_7.jpg" width="1000" height="1000">
+        <img src="/projects/2016/abstract/abstract_8.jpg" width="1000" height="1000">
         `,
   },
 
@@ -393,15 +394,15 @@ export const projects = [
     thumbnail:
       "/projects/2016/typecompilation_two/typecompilation_two_thumb.jpg",
     content: `
-    <img src="/projects/2016/typecompilation_two/typecompilation_two_9.jpg">
-        <img src="/projects/2016/typecompilation_two/typecompilation_two_1.jpg">
-        <img src="/projects/2016/typecompilation_two/typecompilation_two_2.jpg">
-        <img src="/projects/2016/typecompilation_two/typecompilation_two_3.jpg">
-        <img src="/projects/2016/typecompilation_two/typecompilation_two_4.jpg">
-        <img src="/projects/2016/typecompilation_two/typecompilation_two_5.jpg">
-        <img src="/projects/2016/typecompilation_two/typecompilation_two_7.jpg">
-        <img src="/projects/2016/typecompilation_two/typecompilation_two_8.jpg">
-        <img src="/projects/2016/typecompilation_two/typecompilation_two_6.jpg">
+    <img src="/projects/2016/typecompilation_two/typecompilation_two_9.jpg" width="1239" height="959">
+        <img src="/projects/2016/typecompilation_two/typecompilation_two_1.jpg" width="833" height="833">
+        <img src="/projects/2016/typecompilation_two/typecompilation_two_2.jpg" width="833" height="833">
+        <img src="/projects/2016/typecompilation_two/typecompilation_two_3.jpg" width="1336" height="1764">
+        <img src="/projects/2016/typecompilation_two/typecompilation_two_4.jpg" width="800" height="800">
+        <img src="/projects/2016/typecompilation_two/typecompilation_two_5.jpg" width="560" height="750">
+        <img src="/projects/2016/typecompilation_two/typecompilation_two_7.jpg" width="614" height="768">
+        <img src="/projects/2016/typecompilation_two/typecompilation_two_8.jpg" width="614" height="768">
+        <img src="/projects/2016/typecompilation_two/typecompilation_two_6.jpg" width="1134" height="569">
         `,
   },
 
@@ -412,28 +413,28 @@ export const projects = [
     tags: ["typography"],
     thumbnail: "/projects/2012/typecompilation/type-compilation-thumb.jpg",
     content: `
-        <img src="/projects/2012/typecompilation/typecomp-1.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-2.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-3.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-4.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-5.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-6.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-7.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-8.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-9.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-10.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-11.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-12.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-13.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-14.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-15.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-16.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-17.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-18.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-19.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-20.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-21.jpg">
-        <img src="/projects/2012/typecompilation/typecomp-22.jpg">
+        <img src="/projects/2012/typecompilation/typecomp-1.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-2.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-3.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-4.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-5.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-6.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-7.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-8.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-9.jpg" width="940" height="369">
+        <img src="/projects/2012/typecompilation/typecomp-10.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-11.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-12.jpg" width="960" height="414">
+        <img src="/projects/2012/typecompilation/typecomp-13.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-14.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-15.jpg" width="940" height="529">
+        <img src="/projects/2012/typecompilation/typecomp-16.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-17.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-18.jpg" width="1920" height="1080">
+        <img src="/projects/2012/typecompilation/typecomp-19.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-20.jpg" width="1280" height="636">
+        <img src="/projects/2012/typecompilation/typecomp-21.jpg" width="940" height="529">
+        <img src="/projects/2012/typecompilation/typecomp-22.jpg" width="1280" height="636">
         `,
   },
 ];
