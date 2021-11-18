@@ -4,13 +4,19 @@ const SortButton = (btn) => {
       <button
         name={btn?.name}
         onClick={(e) => {
+          btn?.setdata([]);
           if (btn?.name == "all") {
-            btn?.setdata(btn?.projects);
             btn?.setCat("all");
+            setTimeout(() => {
+              btn?.setdata(btn?.projects);
+            }, 50);
           } else {
-            btn?.setdata(
-              btn?.projects.filter((p) => p.tags.includes(e.target.name))
-            );
+            setTimeout(() => {
+              btn?.setdata(
+                btn?.projects.filter((p) => p.tags.includes(e.target.name))
+              );
+            }, 50);
+
             btn?.setCat(e.target.name);
           }
         }}
