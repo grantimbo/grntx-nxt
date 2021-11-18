@@ -604,6 +604,39 @@ p.date {
 }
 
 /*------------------------------------*\
+	MISC
+\*------------------------------------*/
+
+/* Loading Spinner */
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader::after {
+  content: "";
+  border: 0.5rem solid #263253;
+  border-top: 0.5rem solid #4e5e88;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------------------*\
 	ICONS
 \*------------------------------------*/
 
