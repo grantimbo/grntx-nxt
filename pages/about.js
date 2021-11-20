@@ -2,6 +2,8 @@ import Head from "next/head";
 import SocialIcons from "../components/SocialIcons";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import aboutBg from "../public/imgs/about-head-lg.png";
 
 export default function About() {
   const dropIninitial = { opacity: 0, y: -20 },
@@ -22,14 +24,14 @@ export default function About() {
             duration: 0.4,
           }}
         >
-          <img
-            srcSet="/imgs/about-head-sm.png 560w,
-				/imgs/about-head-lg.png 1066w"
-            sizes="(max-width: 768px) 150px, 1066px"
-            src="/imgs/about-head-lg.png"
+          <Image
+            alt="Creator Thinker"
+            src={aboutBg}
+            placeholder="blur"
+            layout="responsive"
+            quality={100}
             width={1066}
             height={574}
-            alt="About"
           />
         </motion.figure>
       </section>
@@ -50,7 +52,7 @@ export default function About() {
             transition={{
               delay: 0.2,
             }}
-          >{`2011-2012 : Graphic / Motion Designer`}</motion.h3>
+          >{`2011-2012 : Graphic & Motion Designer`}</motion.h3>
           <motion.ul
             animate={dropInanimate}
             initial={dropIninitial}
@@ -68,7 +70,7 @@ export default function About() {
               delay: 0.4,
             }}
           >
-            {`2012-2014 : Graphic Designer, WordPress Developer and Front-end Developer`}
+            {`2012-2014 : Graphic Designer & WordPress Theme Developer`}
           </motion.h3>
           <motion.ul
             animate={dropInanimate}
@@ -94,7 +96,7 @@ export default function About() {
             transition={{
               delay: 0.6,
             }}
-          >{`2014-2016 : Lead Graphic Designer, 3D Artist, Web Developer`}</motion.h3>
+          >{`2014-2016 : Lead Graphic Designer, 3D Artist & Web Developer`}</motion.h3>
           <motion.ul
             animate={dropInanimate}
             initial={dropIninitial}
@@ -113,7 +115,7 @@ export default function About() {
             transition={{
               delay: 0.8,
             }}
-          >{`2016-2020 : Full Stack Developer, Designer`}</motion.h3>
+          >{`2016-2020 : Full Stack Developer & Designer`}</motion.h3>
           <motion.ul
             animate={dropInanimate}
             initial={dropIninitial}
@@ -125,11 +127,29 @@ export default function About() {
             <li>{`Designing graphics for the web.`}</li>
           </motion.ul>
 
-          <motion.p
+          <motion.h3
             animate={dropInanimate}
             initial={dropIninitial}
             transition={{
               delay: 1,
+            }}
+          >{`2021-2022 : Front-end Engineer & Lead Designer`}</motion.h3>
+          <motion.ul
+            animate={dropInanimate}
+            initial={dropIninitial}
+            transition={{
+              delay: 1.1,
+            }}
+          >
+            <li>{`Build & maintain the company's web application. (Written in React.js)`}</li>
+            <li>{`Responsible for creating graphics.`}</li>
+          </motion.ul>
+
+          <motion.p
+            animate={dropInanimate}
+            initial={dropIninitial}
+            transition={{
+              delay: 1.2,
             }}
           >
             {`I believe anything can be overcome through commitment and hard work.
@@ -141,7 +161,7 @@ export default function About() {
             animate={dropInanimate}
             initial={dropIninitial}
             transition={{
-              delay: 1.1,
+              delay: 1.3,
             }}
           >
             {`Have an idea you'd like to discuss?`} <br />
@@ -149,17 +169,21 @@ export default function About() {
             <span>grant.imbo@gmail.com</span>
           </motion.p>
 
-          <p>
-            {`Or just want to be friends? Find me online on most digital platforms `}
+          <motion.p
+            animate={dropInanimate}
+            initial={dropIninitial}
+            transition={{
+              delay: 1.4,
+            }}
+          >
+            {`Your can find me online on most digital platforms `}
             <span>@grantimbo</span> or <span>@grntx</span>{" "}
             {`or by clicking the
             links below.`}
-          </p>
+          </motion.p>
           <SocialIcons />
         </article>
       </section>
-
-      <style jsx>{``}</style>
     </>
   );
 }

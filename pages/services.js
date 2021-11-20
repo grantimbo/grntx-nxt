@@ -1,6 +1,13 @@
 import Header from "../components/Header";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import serviceBg from "../public/imgs/services-head-lg.png";
+import designImg from "../public/imgs/services/graphic-design-lg.png";
+import webAppsImg from "../public/imgs/services/website-apps-lg.png";
+import prodRenImg from "../public/imgs/services/product-renders-lg.png";
+import vidProdImg from "../public/imgs/services/video-production-lg.png";
+import margetingImg from "../public/imgs/services/email-marketing-lg.png";
 
 export default function Services() {
   const fadeIninitial = { opacity: 0, scale: 0.95 };
@@ -17,25 +24,28 @@ export default function Services() {
       <Header />
 
       <section className="head">
-        <motion.img
+        <motion.figure
           animate={fadeInanimate}
           initial={fadeIninitial}
           transition={{
             duration: 0.4,
           }}
-          srcSet="/imgs/services-head-sm.png 560w,
-				/imgs/services-head-lg.png 1066w"
-          sizes="(max-width: 768px) 560px, 1066px"
-          src="/imgs/services-head-lg.png"
-          width={1066}
-          height={574}
-          alt="Email Marketing"
-        />
+        >
+          <Image
+            alt="Services Thinker"
+            src={serviceBg}
+            placeholder="blur"
+            layout="responsive"
+            quality={100}
+            width={1066}
+            height={574}
+          />
+        </motion.figure>
       </section>
       <section className="service">
         <article>
           <motion.div
-            className="flex img"
+            className="serviceImg"
             animate={fadeInanimate}
             initial={fadeIninitial}
             transition={{
@@ -43,14 +53,14 @@ export default function Services() {
               delay: 0.3,
             }}
           >
-            <img
-              srcSet="/imgs/services/graphic-design-sm.png 150w,
-						/imgs/services/graphic-design-lg.png 323w"
-              sizes="(max-width: 768px) 150px, 323px"
-              src="/imgs/services/graphic-design-lg.png"
+            <Image
+              alt="Graphic Design"
+              layout="responsive"
+              placeholder="blur"
+              src={designImg}
               width={323}
               height={323}
-              alt="Graphic Design"
+              quality={100}
             />
           </motion.div>
           <div className="flex">
@@ -103,7 +113,7 @@ export default function Services() {
             </div>
           </div>
           <motion.div
-            className="flex img"
+            className="serviceImg"
             animate={fadeInanimate}
             initial={fadeIninitial}
             transition={{
@@ -111,21 +121,21 @@ export default function Services() {
               delay: 0.4,
             }}
           >
-            <img
-              srcSet="/imgs/services/website-apps-sm.png 150w,
-						/imgs/services/website-apps-lg.png 323w"
-              sizes="(max-width: 768px) 150px, 323px"
-              src="/imgs/services/website-apps-lg.png"
+            <Image
+              alt="Websites and Apps"
+              placeholder="blur"
+              layout="responsive"
+              src={webAppsImg}
               width={323}
               height={323}
-              alt="Websites and Apps"
+              quality={100}
             />
           </motion.div>
         </article>
 
         <article>
           <motion.div
-            className="flex img"
+            className="serviceImg"
             animate={fadeInanimate}
             initial={fadeIninitial}
             transition={{
@@ -133,14 +143,14 @@ export default function Services() {
               delay: 0.3,
             }}
           >
-            <img
-              srcSet="/imgs/services/product-renders-sm.png 150w,
-						/imgs/services/product-renders-lg.png 323w"
-              sizes="(max-width: 768px) 150px, 323px"
-              src="/imgs/services/product-renders-lg.png"
+            <Image
+              alt="Product Renders"
+              placeholder="blur"
+              layout="responsive"
+              src={prodRenImg}
               width={323}
               height={323}
-              alt="Product Renders"
+              quality={100}
             />
           </motion.div>
           <div className="flex">
@@ -164,29 +174,29 @@ export default function Services() {
               </p>
             </div>
           </div>
-          <div className="flex img">
-            <img
-              srcSet="/imgs/services/video-production-sm.png 150w,
-						/imgs/services/video-production-lg.png 323w"
-              sizes="(max-width: 768px) 150px, 323px"
-              src="/imgs/services/video-production-lg.png"
+          <div className="serviceImg">
+            <Image
+              alt="Video Production"
+              placeholder="blur"
+              layout="responsive"
+              src={vidProdImg}
               width={323}
               height={323}
-              alt="Video Production"
+              quality={100}
             />
           </div>
         </article>
 
         <article>
-          <div className="flex img">
-            <img
-              srcSet="/imgs/services/email-marketing-sm.png 150w,
-						/imgs/services/email-marketing-lg.png 323w"
-              sizes="(max-width: 768px) 150px, 323px"
-              src="/imgs/services/email-marketing-lg.png"
+          <div className="serviceImg">
+            <Image
+              alt="Email Marketing"
+              placeholder="blur"
+              layout="responsive"
+              src={margetingImg}
               width={323}
               height={323}
-              alt="Email Marketing"
+              quality={100}
             />
           </div>
           <div className="flex">
