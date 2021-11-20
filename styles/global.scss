@@ -5,6 +5,7 @@
   --darkblue: #11172e;
   --border: 1px solid #1d294a;
   --corner: 0.5rem;
+  --softgray: #68749c;
 }
 html {
   box-sizing: border-box;
@@ -82,7 +83,6 @@ a {
     color: var(--blue2);
   }
 }
-
 .btn,
 button {
   background: #142050;
@@ -220,10 +220,46 @@ nav.project-cat {
   }
 }
 
-// Sevices Page
-section.head {
-  text-align: center;
+// Home Page
+section.home {
+  section {
+    article {
+      max-width: 450px;
+      text-align: center;
+      padding: 1.3rem;
+      margin: 0 auto;
+
+      p {
+        color: var(--softgray);
+      }
+    }
+  }
 }
+@media (min-width: 768px) {
+  section.home {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    section {
+      display: flex;
+      align-items: center;
+      article {
+        text-align: left;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Service & About
+section.head {
+  max-width: 1066px;
+  margin: 0 auto;
+}
+
+// Sevices Page
 section.service {
   padding: 0;
   padding: 1rem;
@@ -243,11 +279,14 @@ section.service {
       display: flex;
       align-items: center;
     }
-    .flex.img {
-      justify-content: center;
+    .serviceImg {
+      max-width: 323px;
     }
     h3 {
       color: var(--eggblue);
+    }
+    p {
+      color: var(--softgray);
     }
   }
 }
@@ -260,14 +299,18 @@ section.service {
 
 // About Page
 section.about {
-  max-width: 620px;
+  max-width: 750px;
   margin: 0 auto;
 
   article {
     padding: 1rem;
+    color: var(--softgray);
     h2 {
       margin-bottom: 1.5rem;
       color: var(--eggblue);
+    }
+    h3 {
+      color: #fff;
     }
     ul {
       padding-left: 2.2rem;

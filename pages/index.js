@@ -11,7 +11,7 @@ export default function Home() {
 
       <Header />
 
-      <section className="contents">
+      <section className="home">
         <motion.figure
           animate={{ opacity: 1, scale: 1 }}
           initial={{ opacity: 0, scale: 0.95 }}
@@ -56,44 +56,6 @@ export default function Home() {
           </article>
         </section>
       </section>
-
-      <style jsx>{`
-        figure {
-          padding: 0;
-          margin: 0;
-          display: flex;
-          align-items: center;
-        }
-        figure img {
-          background: #090e20;
-        }
-        .contents article {
-          max-width: 450px;
-          text-align: center;
-          padding: 1.3rem;
-          margin: 0 auto;
-        }
-        p {
-          margin-bottom: 1rem;
-        }
-
-        @media (min-width: 768px) {
-          .contents {
-            display: grid;
-            grid-template-columns: 1.6fr 1fr;
-            max-width: 1600px;
-            margin: 0 auto;
-          }
-          .contents section {
-            display: flex;
-            align-items: center;
-          }
-          .contents article {
-            text-align: left;
-            margin: 0;
-          }
-        }
-      `}</style>
     </>
   );
 }

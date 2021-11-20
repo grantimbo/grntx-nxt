@@ -158,8 +158,6 @@ export default function About() {
           <SocialIcons />
         </article>
       </section>
-
-      <style jsx>{``}</style>
     </>
   );
 }
