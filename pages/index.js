@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import homeBg from "../public/imgs/home-bg-lg.png";
 
 export default function Home() {
   return (
@@ -19,14 +21,14 @@ export default function Home() {
             duration: 0.4,
           }}
         >
-          <img
-            srcSet="/imgs/home-bg-sm.png 640w,
-                    /imgs/home-bg-lg.png 1104w"
-            sizes="(max-width: 768px) 640px, 1104px"
-            src="/imgs/home-bg-lg.png"
+          <Image
+            alt="Creator Thinker"
+            src={homeBg}
+            placeholder="blur"
+            layout="responsive"
+            quality={100}
             width={1104}
             height={930}
-            alt="Creator Thinker"
           />
         </motion.figure>
         <section>

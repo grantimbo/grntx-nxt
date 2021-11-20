@@ -2,6 +2,8 @@ import Head from "next/head";
 import SocialIcons from "../components/SocialIcons";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import aboutBg from "../public/imgs/about-head-lg.png";
 
 export default function About() {
   const dropIninitial = { opacity: 0, y: -20 },
@@ -22,14 +24,14 @@ export default function About() {
             duration: 0.4,
           }}
         >
-          <img
-            srcSet="/imgs/about-head-sm.png 560w,
-				/imgs/about-head-lg.png 1066w"
-            sizes="(max-width: 768px) 150px, 1066px"
-            src="/imgs/about-head-lg.png"
+          <Image
+            alt="Creator Thinker"
+            src={aboutBg}
+            placeholder="blur"
+            layout="responsive"
+            quality={100}
             width={1066}
             height={574}
-            alt="About"
           />
         </motion.figure>
       </section>
