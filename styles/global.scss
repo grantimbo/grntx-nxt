@@ -517,7 +517,7 @@ section.about {
 }
 .modalnav {
   position: fixed;
-  top: 400px;
+  top: 46vh;
   width: 50px;
   cursor: pointer;
   display: flex;
@@ -544,7 +544,7 @@ section.about {
 }
 .modal-container {
   background: #090e20;
-  min-height: 60vh;
+  min-height: 90vh;
   outline: none;
 }
 a.close-modal {
@@ -590,6 +590,17 @@ p.date {
     border-radius: var(--corner);
     margin: 3rem auto;
   }
+  .modalnav {
+    background: #1d294a;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .showNext {
+    right: 1rem;
+  }
+  .showPrev {
+    left: 1rem;
+  }
 }
 @media (min-width: 992px) {
   .modal-container {
@@ -601,34 +612,15 @@ p.date {
     max-width: 1000px;
   }
   .modalnav {
-    top: 0;
-    width: 160px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 3.5rem;
-    border: 0;
-    height: 100%;
-  }
-  .modalnav:hover span {
-    color: #fff;
-  }
-  .modalnav span {
-    background: #1d294a;
-    color: #fff;
-    border-radius: var(--corner);
-    padding: 0 20px 4px;
-
-    &:hover {
-      color: #4072cc;
-    }
-  }
-  .showPrev {
-    background: linear-gradient(90deg, #00061b, #00000000);
+    width: 3.8rem;
+    height: 3.8rem;
   }
   .showNext {
-    background: linear-gradient(90deg, #00000000, #00061b);
+    right: 2rem;
+  }
+  .showPrev {
+    left: 2rem;
   }
 }
 
