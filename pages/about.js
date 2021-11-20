@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import aboutBg from "../public/imgs/about-head-lg.png";
+import { shimmer, toBase64 } from "../utils/BlurData";
 
 export default function About() {
   const dropIninitial = { opacity: 0, y: -20 },
@@ -29,6 +30,9 @@ export default function About() {
             src={aboutBg}
             placeholder="blur"
             layout="responsive"
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(100, 100)
+            )}`}
             quality={100}
             width={1066}
             height={574}

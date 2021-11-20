@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import homeBg from "../public/imgs/home-bg-lg.png";
+import { shimmer, toBase64 } from "../utils/BlurData";
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
             src={homeBg}
             placeholder="blur"
             layout="responsive"
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(100, 100)
+            )}`}
             quality={100}
             width={1104}
             height={930}

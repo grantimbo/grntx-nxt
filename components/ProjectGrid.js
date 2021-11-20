@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { shimmer, toBase64 } from "../utils/BlurData";
 
 export default function ProjectGrid(props) {
   const projects = props?.post;
@@ -18,9 +20,15 @@ export default function ProjectGrid(props) {
                 initial={{ opacity: 0, y: -20, scale: 0.5 }}
                 transition={{ delay: i * 0.04 }}
               >
-                <img
-                  src={project.thumbnail}
-                  alt={project.title}
+                <Image
+                  alt={project?.title}
+                  src={project?.thumbnail}
+                  placeholder="blur"
+                  blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                    shimmer(100, 100)
+                  )}`}
+                  layout="fill"
+                  quality={100}
                   width={300}
                   height={300}
                 />

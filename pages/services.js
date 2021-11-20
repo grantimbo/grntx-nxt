@@ -8,6 +8,7 @@ import webAppsImg from "../public/imgs/services/website-apps-lg.png";
 import prodRenImg from "../public/imgs/services/product-renders-lg.png";
 import vidProdImg from "../public/imgs/services/video-production-lg.png";
 import margetingImg from "../public/imgs/services/email-marketing-lg.png";
+import { shimmer, toBase64 } from "../utils/BlurData";
 
 export default function Services() {
   const fadeIninitial = { opacity: 0, scale: 0.95 };
@@ -34,9 +35,12 @@ export default function Services() {
           <Image
             alt="Services Thinker"
             src={serviceBg}
-            placeholder="blur"
             layout="responsive"
+            placeholder="blur"
             quality={100}
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(100, 100)
+            )}`}
             width={1066}
             height={574}
           />
@@ -61,6 +65,9 @@ export default function Services() {
               width={323}
               height={323}
               quality={100}
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(100, 100)
+              )}`}
             />
           </motion.div>
           <div className="flex">
@@ -129,6 +136,9 @@ export default function Services() {
               width={323}
               height={323}
               quality={100}
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(100, 100)
+              )}`}
             />
           </motion.div>
         </article>
@@ -151,6 +161,9 @@ export default function Services() {
               width={323}
               height={323}
               quality={100}
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(100, 100)
+              )}`}
             />
           </motion.div>
           <div className="flex">
@@ -183,6 +196,9 @@ export default function Services() {
               width={323}
               height={323}
               quality={100}
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(100, 100)
+              )}`}
             />
           </div>
         </article>
@@ -197,6 +213,9 @@ export default function Services() {
               width={323}
               height={323}
               quality={100}
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(100, 100)
+              )}`}
             />
           </div>
           <div className="flex">
