@@ -48,7 +48,7 @@ export default function Home() {
               transition={{ delay: 0.3 }}
             >
               {
-                "Developer by day. Artist by night. Curently working as a full-time Front-End Developer and in spare time, rendering "
+                "Developer by day. Artist by night. Curently working as a full-time Front-End Engineer and in spare time, rendering "
               }
               <a
                 href="https://youtube.com/grantimbo"
