@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Head from "next/head";
+import Link from "next/link";
 import Header from "../components/Header";
 
 export default function NotFound() {
@@ -14,9 +14,7 @@ export default function NotFound() {
           <h1>{"404 — Not Found"}</h1>
           <p>
             {"The link you visited doesn't exist. Please Go back "}
-            <Link href="/">
-              <a>Home</a>
-            </Link>
+            <Link href="/">Home</Link>
           </p>
         </div>
       </section>

@@ -322,6 +322,17 @@ section.about {
   }
 }
 
+.social-icons {
+  margin: 2rem 0;
+
+  a {
+    font-size: 1.4rem;
+    margin-right: 0.8rem;
+    text-decoration: none;
+    color: var(--eggblue);
+  }
+}
+
 /* project list */
 .projects-list {
   display: flex;

@@ -1,7 +1,8 @@
-import Head from "next/head";
-import Header from "../components/Header";
 import { motion } from "framer-motion";
+import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import Header from "../components/Header";
 import homeBg from "../public/imgs/home-bg-lg.png";
 import { shimmer, toBase64 } from "../utils/BlurData";
 
@@ -50,14 +51,14 @@ export default function Home() {
               {
                 "Developer by day. Artist by night. Curently working as a full-time Front-End Engineer and in spare time, rendering "
               }
-              <a
+              <Link
                 href="https://youtube.com/grantimbo"
                 target="_blank"
                 rel="noreferrer"
               >
                 cars
-              </a>
-              {" as a hobby."}
+              </Link>
+              {" for fun."}
             </motion.p>
           </article>
         </section>

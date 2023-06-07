@@ -46,8 +46,8 @@ export const projects = [
     thumbnail: "/projects/2021/civiceg/civiceg_thumb.jpg",
     content: `
     <div class="iframe-wrap"><iframe width="1196" height="673" src="https://www.youtube.com/embed/5iEDLlv0BLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    <img src="/projects/2021/civiceg/civiceg_1.webp" width="1280" height="1599">
-    <img src="/projects/2021/civiceg/civiceg_2.webp" width="1280" height="1599">
+    <Image src="/projects/2021/civiceg/civiceg_1.webp" width="1280" height="1599">
+    <Image src="/projects/2021/civiceg/civiceg_2.webp" width="1280" height="1599">
     `,
   },
   {

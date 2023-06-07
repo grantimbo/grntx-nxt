@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
-import ReactGA from "react-ga";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import ReactGA from "react-ga4";
 
 const Header = () => {
   const router = useRouter();
@@ -24,40 +24,35 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    // Send pageview with a custom path
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname,
+      title: `Grant Imbo`,
+    });
   }, [router.pathname]);
 
   return (
     <header>
       <Link href="/">
-        <a>
-          <div className="logo">Grant Imbo</div>
-        </a>
+        <div className="logo">Grant Imbo</div>
       </Link>
       <nav className="main">
-        <Link href="/">
-          <a className={path == "/" ? "active" : ""}>
-            <i className="icon-home"></i>
-            <span>Home</span>
-          </a>
+        <Link href="/" className={path == "/" ? "active" : ""}>
+          <i className="icon-home"></i>
+          <span>Home</span>
         </Link>
-        <Link href="/projects">
-          <a className={path == "/projects" ? "active" : ""}>
-            <i className="icon-images"></i>
-            <span>Projects</span>
-          </a>
+        <Link href="/projects" className={path == "/projects" ? "active" : ""}>
+          <i className="icon-images"></i>
+          <span>Projects</span>
         </Link>
-        <Link href="/services">
-          <a className={path == "/services" ? "active" : ""}>
-            <i className="icon-cog"></i>
-            <span>Services</span>
-          </a>
+        <Link href="/services" className={path == "/services" ? "active" : ""}>
+          <i className="icon-cog"></i>
+          <span>Services</span>
         </Link>
-        <Link href="/about">
-          <a className={path == "/about" ? "active" : ""}>
-            <i className="icon-user"></i>
-            <span>About</span>
-          </a>
+        <Link href="/about" className={path == "/about" ? "active" : ""}>
+          <i className="icon-user"></i>
+          <span>About</span>
         </Link>
       </nav>
     </header>

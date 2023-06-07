@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import parse from "html-react-parser";
-import Link from "next/link";
 import Head from "next/head";
-import ReactGA from "react-ga";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import ReactGA from "react-ga4";
 
 export default function ModalContents(props) {
   const [loading, setloading] = useState(true);
@@ -43,7 +43,12 @@ export default function ModalContents(props) {
   }, []);
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    // Send pageview with a custom path
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname,
+      title: `Grant Imbo — Projects // ${data?.[0]?.title}`,
+    });
   }, [props?.slug]);
 
   return (
@@ -63,23 +68,22 @@ export default function ModalContents(props) {
             </div>
           )}
 
-          {!loading && projects?.[projects?.length - 1]?.slug != props?.slug && (
-            <div
-              className="modalnav showNext"
-              onClick={() => navigate(data?.[0]?.slug, "next")}
-            >
-              <span className="icon-angle-right"></span>
-            </div>
-          )}
+          {!loading &&
+            projects?.[projects?.length - 1]?.slug != props?.slug && (
+              <div
+                className="modalnav showNext"
+                onClick={() => navigate(data?.[0]?.slug, "next")}
+              >
+                <span className="icon-angle-right"></span>
+              </div>
+            )}
 
           {loading ? (
             <div className="loader"></div>
           ) : (
             <div className="container">
-              <Link href="/projects">
-                <a className="close-modal">
-                  <span className="icon-close"></span>
-                </a>
+              <Link href="/projects" className="close-modal">
+                <span className="icon-close"></span>
               </Link>
               <div className="modal-content" id="scrollHere">
                 <div className="header">
